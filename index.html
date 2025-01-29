@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock_dial">
+        <div class="point"></div>
+        <div class="point_two"></div>
+        <div class="hour hour_1">1</div>
+        <div class="hour hour_2">2</div>
+        <div class="hour hour_3">3</div>
+        <div class="hour hour_4">4</div>
+        <div class="hour hour_5">5</div>
+        <div class="hour hour_6">6</div>
+        <div class="hour hour_7">7</div>
+        <div class="hour hour_8">8</div>
+        <div class="hour hour_9">9</div>
+        <div class="hour hour_10">10</div>
+        <div class="hour hour_11">11</div>
+        <div class="hour hour_12">12
+        </div>
+
+        <div class="minute_hand_wrapper" id="minute_hand">
+            <div class="minute_hand">
+                <div class="hand" id="mHand"></div>
+                <div class="arrow" id="mArrow">V</div>
+            </div>
+        </div>
+
+        <div class="hour_hand_wrapper" id="hour_hand">
+            <div class="hour_hand">
+                <div class="hand" id="hHand"></div>
+                <div class="arrow" id="hArrow">V</div>
+            </div>
+        </div>
+
+        <div class="second_hand_wrapper" id="second_hand">
+            <div class="second_hand">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="analog_clock" id="analog_clock">
+        <div class="h">
+            <div class="hours">0</div>
+            <p>Hours</p>
+        </div>
+        <p>:</p>
+        <div class="m">
+            <div class="minutes">0</div>
+            <p>Minutes</p>
+        </div>
+        <p>:</p>
+        <div class="s">
+            <div class="seconds">0</div>
+            <p>Seconds</p>
+        </div>
+    </div>
+
+    <div class="toggle">
+        <input type="checkbox" id="toggle">
+        <div class="display">
+            <label for="toggle">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sun" fill="#ffd600" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="moon" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                                            
+                </div>
+            </label>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

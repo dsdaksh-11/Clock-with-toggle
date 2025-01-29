@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+body{
+    display: grid;
+    transition: 0.5s;
+    /* background-color: black; */
+}
+
+.toggle{
+    height:200px;
+    width: 500px;
+    position: absolute;
+    top: 55vh;
+    left: 61.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -1; */
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    height: 150px;
+    width: 400px;
+    border-radius: 999px;
+    transition: 0.01s ease-in-out;
+    background-image: url(pngtree-an-image-of-a-beautiful-and-clear-blue-sky-image_13346792.jpg);
+    background-size: cover;
+    background-position-y: 85%;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.4) inset;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    height: 130px;
+    width: 130px;
+    border-radius: 99px;
+    background-color: rgb(254, 253, 253);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.05),
+    -10px -10px 30px rgba(0,0,0,0.05)inset;
+    position: absolute;
+    top:50%;
+    left:0%;
+    transform: translate(10%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+svg{
+    width:80px;
+    position: absolute;
+}
+
+.sun{
+    color: #ffd600;
+    margin-top: 0%;
+}
+
+.moon {
+    color: white;
+    margin-top: -150%;
+}
+
+input[type=checkbox]:checked + .display label {
+    transition: 0.01s ease-in-out;
+    background-image: url(6a00d8341e7ce553ef0147e2863f82970b-800wi.jpg);
+    background-size: cover;
+}
+
+input[type=checkbox]:checked + .display label .circle {
+    left: 100%;
+    transform: translate(-110%, -50%);
+    background: #2c2c2f;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5),
+    -10px -10px 30px rgba(0,0,0,0.5)inset;
+}
+
+input[type=checkbox]:checked + .display label .circle .sun {
+    transition: 0.5s;
+    margin-top: 150%;
+}
+
+input[type=checkbox]:checked + .display label .circle .moon {
+    transition: 0.5s;
+    margin-top: 0%;
+}
+
+.analog_clock {
+    transition: 0s;
+    border: 20px solid #00818a;
+    height:200px;
+    width: 500px;
+    position: absolute;
+    top: 12.5vh;
+    left: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #283149;
+}
+
+.h{
+    transition: 0s;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m{
+    transition: 0s;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analog_clock p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.s{
+    transition: 0s;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_dial {
+    width: 500px;
+    height: 500px;
+    border: 20px solid #00818a;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 10vh;
+    left: -20vw;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #283149;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.point_two{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(165, 42, 42, 0.468);
+    border-radius: 50%;
+    position: absolute;
+    top: 244.5px;
+    left: 245px;
+}
+
+.hour {
+    font-size: 30px;
+    font-weight: bold;
+    color: #283149;
+    position: absolute;
+}
+
+.hour_1 {
+    top: 40px;
+    right: 130px;
+}
+
+.hour_2 {
+    top: 125px;
+    right: 45px;
+}
+
+.hour_3 {
+    top: 235px;
+    right: 10px;
+}
+
+.hour_4 {
+    top: 345px;
+    right: 45px;
+}
+
+.hour_5 {
+    top: 430px;
+    right: 130px;
+}
+
+.hour_6 {
+    bottom: 10px;
+    left: 240px;
+}
+
+.hour_7 {
+    top: 430px;
+    left: 130px;
+}
+
+.hour_8 {
+    top: 345px;
+    left: 45px;
+}
+
+.hour_9 {
+    top: 235px;
+    left: 10px;
+}
+
+.hour_10 {
+    top: 125px;
+    left: 45px;
+}
+
+.hour_11 {
+    top: 40px;
+    left: 130px;
+}
+
+.hour_12 {
+    top: 10px;
+    left: 235px;
+}
+
+.minute_hand_wrapper {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: -2;
+}
+
+.minute_hand {
+    position: relative;
+}
+
+.minute_hand .hand {
+    height: 198px;
+    width: 4.5px;
+    background-color: #283149;
+    position: absolute;
+    left: 198px;
+    top: 6px
+}
+
+.minute_hand .arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: #283149;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 190px;
+    top: -6px;
+}
+
+.hour_hand_wrapper {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: -3;
+}
+
+.hour_hand {
+    position: relative;
+}
+
+.hour_hand .hand {
+    height: 150px;
+    width: 5px;
+    background-color: #283149;
+    position: absolute;
+    left: 148px;
+}
+
+.hour_hand .arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: #283149;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 140px;
+    top: -9px;
+}
+
+.second_hand_wrapper {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    z-index: -1;
+}
+
+.second_hand {
+    position: relative;
+}
+
+.second_hand .hand {
+    height: 220px;
+    width: 3px;
+    background-color: red;
+    position: absolute;
+    left: 174px;
+}
